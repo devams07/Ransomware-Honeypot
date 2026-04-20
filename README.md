@@ -35,16 +35,16 @@ This project is a simple ransomware honeypot system that detects, isolates, and 
 
 Step 1: Setup honeypot
   
-  python honeypot_setup.py
+     python honeypot_setup.py
 
 Step 2: Start monitoring
   
-  python monitor.py
+     python monitor.py
 
 Step 3: Simulate attack (demo)
   
-  python attacker_simulator.py
-
+     python attacker_simulator.py
+   
 📂 Files
 
 ->  honeypot_setup.py → Setup honeypot & backup
