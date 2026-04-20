@@ -1,0 +1,2 @@
+This is sample file 4 inside the honeypot.
+Treat as disposable test data.

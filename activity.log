@@ -1,0 +1,69 @@
+2025-10-16 10:40:13 INFO __main__: Ensured honeypot directories exist at D:\OneDrive\Desktop\Ransomware Honeypot - 1\honeypot
+2025-10-16 10:40:13 INFO __main__: Honeypot prepared at: D:\OneDrive\Desktop\Ransomware Honeypot - 1\honeypot
+2025-10-16 10:40:13 INFO __main__: Created new sample files: document_1.txt, document_2.txt, document_3.txt, document_4.txt, document_5.txt, document_6.txt
+2025-10-16 10:40:17 INFO __main__: Monitor started. Watching: D:\OneDrive\Desktop\Ransomware Honeypot - 1\honeypot
+2025-10-16 10:40:33 INFO __main__: Attacker simulator starting. PID: 15532
+2025-10-16 10:40:33 INFO __main__: Backed up document_1.txt -> document_1.txt.bak
+2025-10-16 10:40:33 WARNING __main__: Simulated encrypt: document_1.txt -> document_1.txt.locked
+2025-10-16 10:40:33 WARNING __main__: Suspicious event detected on document_1.txt.locked
+2025-10-16 10:40:33 WARNING __main__: Detected new .locked file: document_1.txt.locked
+2025-10-16 10:40:34 INFO __main__: Backed up document_2.txt -> document_2.txt.bak
+2025-10-16 10:40:34 WARNING __main__: Simulated encrypt: document_2.txt -> document_2.txt.locked
+2025-10-16 10:40:34 WARNING __main__: Suspicious event detected on document_2.txt.locked
+2025-10-16 10:40:34 WARNING __main__: Detected new .locked file: document_2.txt.locked
+2025-10-16 10:40:34 CRITICAL __main__: ALERT: 4 suspicious events within 8s - triggering isolation
+2025-10-16 10:40:34 INFO __main__: Suspicious events in last 8s: 4
+2025-10-16 10:40:34 INFO __main__: [Monitor] Found attacker PID file: 15532
+2025-10-16 10:40:34 INFO __main__: Invoking isolator for PID 15532
+2025-10-16 10:40:34 INFO __main__: Isolator invoked for PID 15532
+2025-10-16 10:40:34 INFO __main__: [Isolator] Attempting to isolate PID 15532 on Windows
+2025-10-16 10:40:35 INFO __main__: taskkill stdout: SUCCESS: The process with PID 15532 has been terminated.
+2025-10-16 10:40:35 INFO __main__: [Isolator] PID 15532 terminated via taskkill.
+2025-10-16 10:40:35 INFO __main__: [Isolator] Isolation successful for PID 15532. Proceeding to restore.
+2025-10-16 10:40:35 INFO __main__: Invoking restore.py to restore honeypot files.
+2025-10-16 10:40:35 INFO __main__: Starting restore process (force=False)
+2025-10-16 10:40:35 INFO __main__: Restored: document_1.txt (from document_1.txt.bak)
+2025-10-16 10:40:35 INFO __main__: Restored: document_2.txt (from document_2.txt.bak)
+2025-10-16 10:40:35 INFO __main__: Removed simulated encrypted file: document_1.txt.locked
+2025-10-16 10:40:35 INFO __main__: Removed simulated encrypted file: document_2.txt.locked
+2025-10-16 10:40:35 INFO __main__: Removed attacker.pid
+2025-10-16 10:40:35 INFO __main__: Restore summary - Restored: 2, Skipped: 0, Removed locked: 2
+2025-10-16 10:40:35 INFO __main__: Restore process completed successfully.
+2025-10-16 10:40:35 INFO __main__: restore.py finished with returncode 0
+2025-10-16 10:40:35 INFO __main__: Action taken; monitoring continues.
+2025-10-16 10:41:02 INFO __main__: Monitor exiting (KeyboardInterrupt).
+2026-04-20 09:40:20 INFO __main__: Ensured honeypot directories exist at D:\OneDrive\Desktop\Ransomware Honeypot - 1\honeypot
+2026-04-20 09:40:20 INFO __main__: Honeypot prepared at: D:\OneDrive\Desktop\Ransomware Honeypot - 1\honeypot
+2026-04-20 09:40:20 INFO __main__: No new sample files created (already existed).
+2026-04-20 09:40:54 ERROR __main__: Usage: python isolator.py <pid>
+2026-04-20 09:41:19 INFO __main__: Monitor started. Watching: D:\OneDrive\Desktop\Ransomware Honeypot - 1\honeypot
+2026-04-20 09:41:57 INFO __main__: Attacker simulator starting. PID: 8748
+2026-04-20 09:41:57 INFO __main__: Backed up document_1.txt -> document_1.txt.bak
+2026-04-20 09:41:57 WARNING __main__: Simulated encrypt: document_1.txt -> document_1.txt.locked
+2026-04-20 09:41:57 WARNING __main__: Suspicious event detected on document_1.txt.locked
+2026-04-20 09:41:57 WARNING __main__: Detected new .locked file: document_1.txt.locked
+2026-04-20 09:41:58 INFO __main__: Backed up document_2.txt -> document_2.txt.bak
+2026-04-20 09:41:58 WARNING __main__: Simulated encrypt: document_2.txt -> document_2.txt.locked
+2026-04-20 09:41:59 WARNING __main__: Suspicious event detected on document_2.txt.locked
+2026-04-20 09:41:59 WARNING __main__: Detected new .locked file: document_2.txt.locked
+2026-04-20 09:41:59 CRITICAL __main__: ALERT: 4 suspicious events within 8s - triggering isolation
+2026-04-20 09:41:59 INFO __main__: Suspicious events in last 8s: 4
+2026-04-20 09:41:59 INFO __main__: [Monitor] Found attacker PID file: 8748
+2026-04-20 09:41:59 INFO __main__: Invoking isolator for PID 8748
+2026-04-20 09:41:59 INFO __main__: Isolator invoked for PID 8748
+2026-04-20 09:41:59 INFO __main__: [Isolator] Attempting to isolate PID 8748 on Windows
+2026-04-20 09:41:59 INFO __main__: taskkill stdout: SUCCESS: The process with PID 8748 has been terminated.
+2026-04-20 09:42:00 INFO __main__: [Isolator] PID 8748 terminated via taskkill.
+2026-04-20 09:42:00 INFO __main__: [Isolator] Isolation successful for PID 8748. Proceeding to restore.
+2026-04-20 09:42:00 INFO __main__: Invoking restore.py to restore honeypot files.
+2026-04-20 09:42:00 INFO __main__: Starting restore process (force=False)
+2026-04-20 09:42:00 INFO __main__: Restored: document_1.txt (from document_1.txt.bak)
+2026-04-20 09:42:00 INFO __main__: Restored: document_2.txt (from document_2.txt.bak)
+2026-04-20 09:42:00 INFO __main__: Removed simulated encrypted file: document_1.txt.locked
+2026-04-20 09:42:00 INFO __main__: Removed simulated encrypted file: document_2.txt.locked
+2026-04-20 09:42:00 INFO __main__: Removed attacker.pid
+2026-04-20 09:42:00 INFO __main__: Restore summary - Restored: 2, Skipped: 0, Removed locked: 2
+2026-04-20 09:42:00 INFO __main__: Restore process completed successfully.
+2026-04-20 09:42:00 INFO __main__: restore.py finished with returncode 0
+2026-04-20 09:42:00 INFO __main__: Action taken; monitoring continues.
+2026-04-20 09:44:36 INFO __main__: Monitor exiting (KeyboardInterrupt).
