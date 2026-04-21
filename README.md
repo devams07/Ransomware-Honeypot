@@ -1,60 +1,82 @@
-🛡️ Ransomware Honeypot Demo
+# 🛡️ **RANSOMWARE HONEYPOT DEMO**
 
-📌 Overview
+---
+
+## 📌 Overview
 
 This project is a simple ransomware honeypot system that detects, isolates, and recovers from ransomware-like attacks in a controlled environment.
 
-⚙️ How It Works
+---
 
-1. Run honeypot_setup.py
-   
-   Creates honeypot (decoy) files
-   
-   Creates backup of original files
-3. Run monitor.py
+## ⚙️ How It Works
 
-   Continuously monitors file activity
+### 1️⃣ Setup Phase
 
-   Detects suspicious behavior
-5. Run attacker_simulator.py (for demo)
+Run:
 
-   Simulates ransomware attack
+```
+python honeypot_setup.py
+```
 
-   Encrypts/changes files like real malware
-7. Detection & Response
+* Creates honeypot (decoy) files
+* Creates backup of original files
 
-   Monitor detects abnormal activity
+---
 
-   isolator.py isolates the attacking process
+### 2️⃣ Monitoring Phase
 
-   Encrypted files are removed
+Run:
 
-   Files are restored from backup
+```
+python monitor.py
+```
 
-▶️ Running Order
+* Continuously monitors file activity
+* Detects suspicious behavior
 
-Step 1: Setup honeypot
-  
-     python honeypot_setup.py
+---
 
-Step 2: Start monitoring
-  
-     python monitor.py
+### 3️⃣ Attack Simulation (Demo)
 
-Step 3: Simulate attack (demo)
-  
-     python attacker_simulator.py
-   
-📂 Files
+Run:
 
-->  honeypot_setup.py → Setup honeypot & backup
+```
+python attacker_simulator.py
+```
 
-->  monitor.py → Monitor and detect attacks
+* Simulates ransomware attack
+* Encrypts/changes files like real malware
 
-->  attacker_simulator.py → Simulate ransomware
+---
 
-->  isolator.py → Stop attacker & recover files
+### 🛡️ Detection & Response
 
-⚠️ Disclaimer
+* Monitor detects abnormal activity
+* `isolator.py` isolates the attacking process
+* Encrypted files are removed
+* Files are restored from backup
 
-For educational purposes only.
+---
+
+## ▶️ Running Order
+
+```
+Step 1: python honeypot_setup.py
+Step 2: python monitor.py
+Step 3: python attacker_simulator.py
+```
+
+---
+
+## 📂 Files
+
+* `honeypot_setup.py` → Setup honeypot & backup
+* `monitor.py` → Monitor and detect attacks
+* `attacker_simulator.py` → Simulate ransomware
+* `isolator.py` → Stop attacker & recover files
+
+---
+
+## ⚠️ Disclaimer
+
+This project is for **educational purposes only**.
