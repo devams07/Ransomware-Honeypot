@@ -88,3 +88,7 @@ This project is for **educational purposes only**.
 **Deva M S**
 
 ---
+
+## ⭐ Support
+
+If you like this project, consider giving it a ⭐ on GitHub!
