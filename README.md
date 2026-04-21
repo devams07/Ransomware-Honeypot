@@ -80,3 +80,11 @@ Step 3: python attacker_simulator.py
 ## ⚠️ Disclaimer
 
 This project is for **educational purposes only**.
+
+---
+
+## 👨‍💻 Author
+
+**Deva M S**
+
+---
